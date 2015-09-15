@@ -28,20 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
+            this.HomeBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackColor = System.Drawing.Color.SlateBlue;
+            this.HomeBtn.Location = new System.Drawing.Point(16, 16);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(96, 32);
+            this.HomeBtn.TabIndex = 0;
+            this.HomeBtn.Text = "主页";
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 261);
+            this.BackColor = System.Drawing.Color.SlateBlue;
+            this.ClientSize = new System.Drawing.Size(884, 441);
+            this.Controls.Add(this.HomeBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(900, 480);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(900, 480);
             this.Name = "MainFrm";
-            this.Text = "OnlineMonitor";
+            this.Text = "Online Monitor";
+            this.Load += new System.EventHandler(this.MainFrm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button HomeBtn;
     }
 }
 

@@ -16,5 +16,17 @@ namespace OnlineMonitor
         {
             InitializeComponent();
         }
+
+        private void MainFrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            Form HomePage = new HomePage(); 
+            HomePage.Show();
+            this.Hide();
+        }
     }
 }
