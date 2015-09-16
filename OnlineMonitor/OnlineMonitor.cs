@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OnlineMonitor
 {
-    public partial class MainFrm : Form
+    public partial class MonitorFrm : Form
     {
-        public MainFrm()
+        public MonitorFrm()
         {
             InitializeComponent();
         }
@@ -22,11 +22,38 @@ namespace OnlineMonitor
 
         }
 
-        private void HomeBtn_Click(object sender, EventArgs e)
+        Point mouseOff;//鼠标移动位置变量
+        bool leftFlag;//标签是否为左键
+        private void MonitorFrm_MouseDown(object sender, MouseEventArgs e)
         {
-            Form HomePage = new HomePage(); 
-            HomePage.Show();
-            this.Hide();
+            if (e.Button == MouseButtons.Left)
+            {
+                mouseOff = new Point(-e.X, -e.Y); //得到变量的值
+                leftFlag = true;                  //点击左键按下时标注为true;
+            }
+        }
+
+        private void MonitorFrm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (leftFlag)
+            {
+                Point mouseSet = Control.MousePosition;
+                mouseSet.Offset(mouseOff.X, mouseOff.Y);  //设置移动后的位置
+                Location = mouseSet;
+            }
+        }
+
+        private void MonitorFrm_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (leftFlag)
+            {
+                leftFlag = false;//释放鼠标后标注为false;
+            }
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -73,9 +73,39 @@ namespace OnlineMonitor.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap Exit {
+            get {
+                object obj = ResourceManager.GetObject("Exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MiniSize {
+            get {
+                object obj = ResourceManager.GetObject("MiniSize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap Monitor {
             get {
                 object obj = ResourceManager.GetObject("Monitor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MonitorText {
+            get {
+                object obj = ResourceManager.GetObject("MonitorText", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

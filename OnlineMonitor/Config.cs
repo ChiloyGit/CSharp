@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace OnlineMonitor
 {
-    public partial class HomePage : Form
+    public partial class ConfigFrm : Form
     {
-        public HomePage()
+        public ConfigFrm()
         {
             InitializeComponent();
+        }
+
+        private void MonitorBtn_Click(object sender, EventArgs e)
+        {
+            Form MonitorFrm = new MonitorFrm();
+            MonitorFrm.Show();
+            this.Hide();
         }
     }
 }
