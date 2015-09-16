@@ -32,13 +32,14 @@
             this.ExitBtn = new System.Windows.Forms.Button();
             this.MiniBtn = new System.Windows.Forms.Button();
             this.MainLabel = new System.Windows.Forms.Label();
+            this.SetBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ExitBtn
             // 
-            this.ExitBtn.BackgroundImage = global::OnlineMonitor.Properties.Resources.Exit;
             this.ExitBtn.FlatAppearance.BorderSize = 0;
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitBtn.Image = global::OnlineMonitor.Properties.Resources.Exit;
             this.ExitBtn.Location = new System.Drawing.Point(870, 0);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(30, 30);
@@ -48,9 +49,9 @@
             // 
             // MiniBtn
             // 
-            this.MiniBtn.BackgroundImage = global::OnlineMonitor.Properties.Resources.MiniSize;
             this.MiniBtn.FlatAppearance.BorderSize = 0;
             this.MiniBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MiniBtn.Image = global::OnlineMonitor.Properties.Resources.MiniSize;
             this.MiniBtn.Location = new System.Drawing.Point(840, 0);
             this.MiniBtn.Name = "MiniBtn";
             this.MiniBtn.Size = new System.Drawing.Size(30, 30);
@@ -62,11 +63,22 @@
             this.MainLabel.Image = global::OnlineMonitor.Properties.Resources.MonitorText;
             this.MainLabel.Location = new System.Drawing.Point(0, 0);
             this.MainLabel.Name = "MainLabel";
-            this.MainLabel.Size = new System.Drawing.Size(840, 30);
+            this.MainLabel.Size = new System.Drawing.Size(810, 30);
             this.MainLabel.TabIndex = 0;
             this.MainLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseDown);
             this.MainLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseMove);
             this.MainLabel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseUp);
+            // 
+            // SetBtn
+            // 
+            this.SetBtn.BackgroundImage = global::OnlineMonitor.Properties.Resources.Setting;
+            this.SetBtn.FlatAppearance.BorderSize = 0;
+            this.SetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SetBtn.Location = new System.Drawing.Point(810, 0);
+            this.SetBtn.Name = "SetBtn";
+            this.SetBtn.Size = new System.Drawing.Size(30, 30);
+            this.SetBtn.TabIndex = 3;
+            this.SetBtn.UseVisualStyleBackColor = true;
             // 
             // MonitorFrm
             // 
@@ -75,6 +87,7 @@
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(900, 480);
             this.ControlBox = false;
+            this.Controls.Add(this.SetBtn);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.MiniBtn);
             this.Controls.Add(this.MainLabel);
@@ -99,6 +112,7 @@
         private System.Windows.Forms.Label MainLabel;
         private System.Windows.Forms.Button MiniBtn;
         private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Button SetBtn;
     }
 }
 
