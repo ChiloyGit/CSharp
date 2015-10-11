@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs">
-      <SubType>Form</SubType>
+    <Compile Include="AppConfig.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Config.Designer.cs">
-      <DependentUpon>Config.cs</DependentUpon>
+    <Compile Include="AppConfig.Designer.cs">
+      <DependentUpon>AppConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPanle\GeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfigPanle\GeneralControl.Designer.cs">
+      <DependentUpon>GeneralControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DevView.Designer.cs">
+      <DependentUpon>DevView.cs</DependentUpon>
     </Compile>
     <Compile Include="OnlineMonitor.cs">
       <SubType>Form</SubType>
@@ -61,8 +73,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Config.resx">
-      <DependentUpon>Config.cs</DependentUpon>
+    <EmbeddedResource Include="AppConfig.resx">
+      <DependentUpon>AppConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPanle\GeneralControl.resx">
+      <DependentUpon>GeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevView.resx">
+      <DependentUpon>DevView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OnlineMonitor.resx">
       <DependentUpon>OnlineMonitor.cs</DependentUpon>
@@ -90,21 +108,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ico\MonitorText.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ico\MiniSize.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ico\Exit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ico\Setting.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

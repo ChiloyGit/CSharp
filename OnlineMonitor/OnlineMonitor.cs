@@ -16,10 +16,12 @@ namespace OnlineMonitor
         {
             InitializeComponent();
         }
-
-        private void MainFrm_Load(object sender, EventArgs e)
+        public AppConfig View_AppConfig;
+        //public ConfigPanle.GeneralControl View_GeneralControl;
+        public void MainFrm_Load(object sender, EventArgs e)
         {
-
+            View_AppConfig = new AppConfig();
+            //View_GeneralControl = new ConfigPanle.GeneralControl();
         }
 
         Point mouseOff;//鼠标移动位置变量
@@ -54,6 +56,13 @@ namespace OnlineMonitor
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void SetBtn_Click(object sender, EventArgs e)
+        {
+            View_AppConfig.Show();
+            MainPanle.Controls.Clear();
+            MainPanle.Controls.Add(View_AppConfig);
         }
     }
 }

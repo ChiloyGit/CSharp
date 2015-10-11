@@ -33,6 +33,7 @@
             this.MiniBtn = new System.Windows.Forms.Button();
             this.MainLabel = new System.Windows.Forms.Label();
             this.SetBtn = new System.Windows.Forms.Button();
+            this.MainPanle = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // ExitBtn
@@ -79,6 +80,15 @@
             this.SetBtn.Size = new System.Drawing.Size(30, 30);
             this.SetBtn.TabIndex = 3;
             this.SetBtn.UseVisualStyleBackColor = true;
+            this.SetBtn.Click += new System.EventHandler(this.SetBtn_Click);
+            // 
+            // MainPanle
+            // 
+            this.MainPanle.BackColor = System.Drawing.Color.Purple;
+            this.MainPanle.Location = new System.Drawing.Point(30, 30);
+            this.MainPanle.Name = "MainPanle";
+            this.MainPanle.Size = new System.Drawing.Size(840, 420);
+            this.MainPanle.TabIndex = 4;
             // 
             // MonitorFrm
             // 
@@ -87,6 +97,7 @@
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(900, 480);
             this.ControlBox = false;
+            this.Controls.Add(this.MainPanle);
             this.Controls.Add(this.SetBtn);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.MiniBtn);
@@ -113,6 +124,7 @@
         private System.Windows.Forms.Button MiniBtn;
         private System.Windows.Forms.Button ExitBtn;
         private System.Windows.Forms.Button SetBtn;
+        private System.Windows.Forms.Panel MainPanle;
     }
 }
 
