@@ -42,6 +42,7 @@ namespace OnlineMonitor
             View_DevControl.Show();
             ConfigSplitContainer.Panel2.Controls.Clear();
             ConfigSplitContainer.Panel2.Controls.Add(View_DevControl);
+            this.View_DevControl.Location = new System.Drawing.Point(0, 0);
         }
 
         private void AboutConfigBtn_Click(object sender, EventArgs e)

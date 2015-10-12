@@ -54,7 +54,8 @@
             this.ConfigSplitContainer.Panel1.Controls.Add(this.GenaConfigBtn);
             this.ConfigSplitContainer.Panel1MinSize = 100;
             this.ConfigSplitContainer.Size = new System.Drawing.Size(840, 420);
-            this.ConfigSplitContainer.SplitterDistance = 125;
+            this.ConfigSplitContainer.SplitterDistance = 130;
+            this.ConfigSplitContainer.SplitterWidth = 10;
             this.ConfigSplitContainer.TabIndex = 0;
             // 
             // AboutConfigBtn
@@ -66,7 +67,7 @@
             this.AboutConfigBtn.ForeColor = System.Drawing.Color.Transparent;
             this.AboutConfigBtn.Location = new System.Drawing.Point(25, 331);
             this.AboutConfigBtn.Name = "AboutConfigBtn";
-            this.AboutConfigBtn.Size = new System.Drawing.Size(75, 25);
+            this.AboutConfigBtn.Size = new System.Drawing.Size(80, 25);
             this.AboutConfigBtn.TabIndex = 3;
             this.AboutConfigBtn.Text = "关 于";
             this.AboutConfigBtn.UseVisualStyleBackColor = false;
@@ -81,7 +82,7 @@
             this.DevConfigBtn.ForeColor = System.Drawing.Color.Transparent;
             this.DevConfigBtn.Location = new System.Drawing.Point(25, 242);
             this.DevConfigBtn.Name = "DevConfigBtn";
-            this.DevConfigBtn.Size = new System.Drawing.Size(75, 25);
+            this.DevConfigBtn.Size = new System.Drawing.Size(80, 25);
             this.DevConfigBtn.TabIndex = 2;
             this.DevConfigBtn.Text = "设 备";
             this.DevConfigBtn.UseVisualStyleBackColor = false;
@@ -96,7 +97,7 @@
             this.UserConfigBtn.ForeColor = System.Drawing.Color.Transparent;
             this.UserConfigBtn.Location = new System.Drawing.Point(25, 153);
             this.UserConfigBtn.Name = "UserConfigBtn";
-            this.UserConfigBtn.Size = new System.Drawing.Size(75, 25);
+            this.UserConfigBtn.Size = new System.Drawing.Size(80, 25);
             this.UserConfigBtn.TabIndex = 1;
             this.UserConfigBtn.Text = "用 户";
             this.UserConfigBtn.UseVisualStyleBackColor = false;
@@ -111,7 +112,7 @@
             this.GenaConfigBtn.ForeColor = System.Drawing.Color.Transparent;
             this.GenaConfigBtn.Location = new System.Drawing.Point(25, 64);
             this.GenaConfigBtn.Name = "GenaConfigBtn";
-            this.GenaConfigBtn.Size = new System.Drawing.Size(75, 25);
+            this.GenaConfigBtn.Size = new System.Drawing.Size(80, 25);
             this.GenaConfigBtn.TabIndex = 0;
             this.GenaConfigBtn.Text = "常 规";
             this.GenaConfigBtn.UseVisualStyleBackColor = false;
@@ -121,6 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumVioletRed;
             this.Controls.Add(this.ConfigSplitContainer);
             this.Name = "AppConfig";
             this.Size = new System.Drawing.Size(840, 420);

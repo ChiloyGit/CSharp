@@ -30,11 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // DevView
+            // MonitorState
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "DevView";
+            this.Location = new System.Drawing.Point(30, 30);
+            this.Name = "MonitorState";
             this.Size = new System.Drawing.Size(840, 420);
             this.ResumeLayout(false);
 

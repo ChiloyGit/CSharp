@@ -28,19 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.DevlistView = new System.Windows.Forms.ListView();
             this.SuspendLayout();
+            // 
+            // DevlistView
+            // 
+            this.DevlistView.BackColor = System.Drawing.Color.Violet;
+            this.DevlistView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DevlistView.Location = new System.Drawing.Point(0, 30);
+            this.DevlistView.Name = "DevlistView";
+            this.DevlistView.Size = new System.Drawing.Size(700, 390);
+            this.DevlistView.TabIndex = 0;
+            this.DevlistView.UseCompatibleStateImageBehavior = false;
             // 
             // DevControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Wheat;
+            this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.DevlistView);
             this.Name = "DevControl";
-            this.Size = new System.Drawing.Size(720, 420);
+            this.Size = new System.Drawing.Size(700, 420);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ListView DevlistView;
     }
 }

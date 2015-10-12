@@ -38,7 +38,7 @@
             // 
             // MainPanle
             // 
-            this.MainPanle.BackColor = System.Drawing.Color.Purple;
+            this.MainPanle.BackColor = System.Drawing.Color.Violet;
             this.MainPanle.Location = new System.Drawing.Point(30, 30);
             this.MainPanle.Name = "MainPanle";
             this.MainPanle.Size = new System.Drawing.Size(840, 420);

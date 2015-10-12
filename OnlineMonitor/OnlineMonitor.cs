@@ -63,6 +63,7 @@ namespace OnlineMonitor
             View_AppConfig.Show();
             MainPanle.Controls.Clear();
             MainPanle.Controls.Add(View_AppConfig);
+           
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)

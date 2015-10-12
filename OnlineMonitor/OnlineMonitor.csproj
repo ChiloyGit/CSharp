@@ -71,6 +71,12 @@
     <Compile Include="ConfigPanle\GeneralControl.Designer.cs">
       <DependentUpon>GeneralControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfigPanle\DevInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfigPanle\DevInfo.Designer.cs">
+      <DependentUpon>DevInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfigPanle\UsersControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigPanle\GeneralControl.resx">
       <DependentUpon>GeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPanle\DevInfo.resx">
+      <DependentUpon>DevInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigPanle\UsersControl.resx">
       <DependentUpon>UsersControl.cs</DependentUpon>
