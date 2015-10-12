@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace OnlineMonitor
+namespace OnlineMonitor.ConfigPanle
 {
-    public partial class DevView : UserControl
+    public partial class DevControl : UserControl
     {
-        public DevView()
+        public DevControl()
         {
             InitializeComponent();
         }

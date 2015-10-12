@@ -53,17 +53,35 @@
     <Compile Include="AppConfig.Designer.cs">
       <DependentUpon>AppConfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfigPanle\AboutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfigPanle\AboutControl.Designer.cs">
+      <DependentUpon>AboutControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPanle\DevControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfigPanle\DevControl.Designer.cs">
+      <DependentUpon>DevControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfigPanle\GeneralControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ConfigPanle\GeneralControl.Designer.cs">
       <DependentUpon>GeneralControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DevView.cs">
+    <Compile Include="ConfigPanle\UsersControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DevView.Designer.cs">
-      <DependentUpon>DevView.cs</DependentUpon>
+    <Compile Include="ConfigPanle\UsersControl.Designer.cs">
+      <DependentUpon>UsersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonitorState.Designer.cs">
+      <DependentUpon>MonitorState.cs</DependentUpon>
     </Compile>
     <Compile Include="OnlineMonitor.cs">
       <SubType>Form</SubType>
@@ -76,11 +94,20 @@
     <EmbeddedResource Include="AppConfig.resx">
       <DependentUpon>AppConfig.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPanle\AboutControl.resx">
+      <DependentUpon>AboutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPanle\DevControl.resx">
+      <DependentUpon>DevControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfigPanle\GeneralControl.resx">
       <DependentUpon>GeneralControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DevView.resx">
-      <DependentUpon>DevView.cs</DependentUpon>
+    <EmbeddedResource Include="ConfigPanle\UsersControl.resx">
+      <DependentUpon>UsersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitorState.resx">
+      <DependentUpon>MonitorState.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OnlineMonitor.resx">
       <DependentUpon>OnlineMonitor.cs</DependentUpon>
@@ -108,7 +135,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ico\Home.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

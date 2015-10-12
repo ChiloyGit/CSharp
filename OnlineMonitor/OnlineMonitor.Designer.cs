@@ -29,12 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MonitorFrm));
-            this.ExitBtn = new System.Windows.Forms.Button();
-            this.MiniBtn = new System.Windows.Forms.Button();
-            this.MainLabel = new System.Windows.Forms.Label();
-            this.SetBtn = new System.Windows.Forms.Button();
             this.MainPanle = new System.Windows.Forms.Panel();
+            this.SetBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
+            this.HomeBtn = new System.Windows.Forms.Button();
+            this.MainLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // MainPanle
+            // 
+            this.MainPanle.BackColor = System.Drawing.Color.Purple;
+            this.MainPanle.Location = new System.Drawing.Point(30, 30);
+            this.MainPanle.Name = "MainPanle";
+            this.MainPanle.Size = new System.Drawing.Size(840, 420);
+            this.MainPanle.TabIndex = 4;
+            // 
+            // SetBtn
+            // 
+            this.SetBtn.BackgroundImage = global::OnlineMonitor.Properties.Resources.Setting;
+            this.SetBtn.FlatAppearance.BorderSize = 0;
+            this.SetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SetBtn.Location = new System.Drawing.Point(840, 0);
+            this.SetBtn.Name = "SetBtn";
+            this.SetBtn.Size = new System.Drawing.Size(30, 30);
+            this.SetBtn.TabIndex = 3;
+            this.SetBtn.UseVisualStyleBackColor = true;
+            this.SetBtn.Click += new System.EventHandler(this.SetBtn_Click);
             // 
             // ExitBtn
             // 
@@ -48,16 +68,17 @@
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
-            // MiniBtn
+            // HomeBtn
             // 
-            this.MiniBtn.FlatAppearance.BorderSize = 0;
-            this.MiniBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MiniBtn.Image = global::OnlineMonitor.Properties.Resources.MiniSize;
-            this.MiniBtn.Location = new System.Drawing.Point(840, 0);
-            this.MiniBtn.Name = "MiniBtn";
-            this.MiniBtn.Size = new System.Drawing.Size(30, 30);
-            this.MiniBtn.TabIndex = 1;
-            this.MiniBtn.UseVisualStyleBackColor = true;
+            this.HomeBtn.FlatAppearance.BorderSize = 0;
+            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBtn.Image = global::OnlineMonitor.Properties.Resources.Home;
+            this.HomeBtn.Location = new System.Drawing.Point(810, 0);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(30, 30);
+            this.HomeBtn.TabIndex = 1;
+            this.HomeBtn.UseVisualStyleBackColor = true;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // MainLabel
             // 
@@ -70,26 +91,6 @@
             this.MainLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseMove);
             this.MainLabel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseUp);
             // 
-            // SetBtn
-            // 
-            this.SetBtn.BackgroundImage = global::OnlineMonitor.Properties.Resources.Setting;
-            this.SetBtn.FlatAppearance.BorderSize = 0;
-            this.SetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SetBtn.Location = new System.Drawing.Point(810, 0);
-            this.SetBtn.Name = "SetBtn";
-            this.SetBtn.Size = new System.Drawing.Size(30, 30);
-            this.SetBtn.TabIndex = 3;
-            this.SetBtn.UseVisualStyleBackColor = true;
-            this.SetBtn.Click += new System.EventHandler(this.SetBtn_Click);
-            // 
-            // MainPanle
-            // 
-            this.MainPanle.BackColor = System.Drawing.Color.Purple;
-            this.MainPanle.Location = new System.Drawing.Point(30, 30);
-            this.MainPanle.Name = "MainPanle";
-            this.MainPanle.Size = new System.Drawing.Size(840, 420);
-            this.MainPanle.TabIndex = 4;
-            // 
             // MonitorFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -100,7 +101,7 @@
             this.Controls.Add(this.MainPanle);
             this.Controls.Add(this.SetBtn);
             this.Controls.Add(this.ExitBtn);
-            this.Controls.Add(this.MiniBtn);
+            this.Controls.Add(this.HomeBtn);
             this.Controls.Add(this.MainLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -121,7 +122,7 @@
         #endregion
 
         private System.Windows.Forms.Label MainLabel;
-        private System.Windows.Forms.Button MiniBtn;
+        private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Button ExitBtn;
         private System.Windows.Forms.Button SetBtn;
         private System.Windows.Forms.Panel MainPanle;

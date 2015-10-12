@@ -1,6 +1,6 @@
-﻿namespace OnlineMonitor
+﻿namespace OnlineMonitor.ConfigPanle
 {
-    partial class DevView
+    partial class AboutControl
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -28,18 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.AboutControlLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // DevView
+            // AboutControlLbl
+            // 
+            this.AboutControlLbl.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.AboutControlLbl.ForeColor = System.Drawing.Color.Transparent;
+            this.AboutControlLbl.Location = new System.Drawing.Point(25, 64);
+            this.AboutControlLbl.Name = "AboutControlLbl";
+            this.AboutControlLbl.Size = new System.Drawing.Size(658, 20);
+            this.AboutControlLbl.TabIndex = 0;
+            this.AboutControlLbl.Text = "本程序用于监控设备网络在线情况。";
+            // 
+            // AboutControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "DevView";
-            this.Size = new System.Drawing.Size(840, 420);
+            this.BackColor = System.Drawing.Color.Purple;
+            this.Controls.Add(this.AboutControlLbl);
+            this.Name = "AboutControl";
+            this.Size = new System.Drawing.Size(720, 420);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label AboutControlLbl;
     }
 }

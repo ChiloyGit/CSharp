@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.ConfigSplitContainer = new System.Windows.Forms.SplitContainer();
+            this.AboutConfigBtn = new System.Windows.Forms.Button();
+            this.DevConfigBtn = new System.Windows.Forms.Button();
+            this.UserConfigBtn = new System.Windows.Forms.Button();
             this.GenaConfigBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigSplitContainer)).BeginInit();
             this.ConfigSplitContainer.Panel1.SuspendLayout();
@@ -45,11 +48,59 @@
             // 
             // ConfigSplitContainer.Panel1
             // 
+            this.ConfigSplitContainer.Panel1.Controls.Add(this.AboutConfigBtn);
+            this.ConfigSplitContainer.Panel1.Controls.Add(this.DevConfigBtn);
+            this.ConfigSplitContainer.Panel1.Controls.Add(this.UserConfigBtn);
             this.ConfigSplitContainer.Panel1.Controls.Add(this.GenaConfigBtn);
             this.ConfigSplitContainer.Panel1MinSize = 100;
             this.ConfigSplitContainer.Size = new System.Drawing.Size(840, 420);
             this.ConfigSplitContainer.SplitterDistance = 125;
             this.ConfigSplitContainer.TabIndex = 0;
+            // 
+            // AboutConfigBtn
+            // 
+            this.AboutConfigBtn.BackColor = System.Drawing.Color.Purple;
+            this.AboutConfigBtn.FlatAppearance.BorderSize = 0;
+            this.AboutConfigBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AboutConfigBtn.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.AboutConfigBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.AboutConfigBtn.Location = new System.Drawing.Point(25, 331);
+            this.AboutConfigBtn.Name = "AboutConfigBtn";
+            this.AboutConfigBtn.Size = new System.Drawing.Size(75, 25);
+            this.AboutConfigBtn.TabIndex = 3;
+            this.AboutConfigBtn.Text = "关 于";
+            this.AboutConfigBtn.UseVisualStyleBackColor = false;
+            this.AboutConfigBtn.Click += new System.EventHandler(this.AboutConfigBtn_Click);
+            // 
+            // DevConfigBtn
+            // 
+            this.DevConfigBtn.BackColor = System.Drawing.Color.Purple;
+            this.DevConfigBtn.FlatAppearance.BorderSize = 0;
+            this.DevConfigBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DevConfigBtn.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DevConfigBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.DevConfigBtn.Location = new System.Drawing.Point(25, 242);
+            this.DevConfigBtn.Name = "DevConfigBtn";
+            this.DevConfigBtn.Size = new System.Drawing.Size(75, 25);
+            this.DevConfigBtn.TabIndex = 2;
+            this.DevConfigBtn.Text = "设 备";
+            this.DevConfigBtn.UseVisualStyleBackColor = false;
+            this.DevConfigBtn.Click += new System.EventHandler(this.DevConfigBtn_Click);
+            // 
+            // UserConfigBtn
+            // 
+            this.UserConfigBtn.BackColor = System.Drawing.Color.Purple;
+            this.UserConfigBtn.FlatAppearance.BorderSize = 0;
+            this.UserConfigBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserConfigBtn.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.UserConfigBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.UserConfigBtn.Location = new System.Drawing.Point(25, 153);
+            this.UserConfigBtn.Name = "UserConfigBtn";
+            this.UserConfigBtn.Size = new System.Drawing.Size(75, 25);
+            this.UserConfigBtn.TabIndex = 1;
+            this.UserConfigBtn.Text = "用 户";
+            this.UserConfigBtn.UseVisualStyleBackColor = false;
+            this.UserConfigBtn.Click += new System.EventHandler(this.UserConfigBtn_Click);
             // 
             // GenaConfigBtn
             // 
@@ -58,9 +109,9 @@
             this.GenaConfigBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenaConfigBtn.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.GenaConfigBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.GenaConfigBtn.Location = new System.Drawing.Point(25, 54);
+            this.GenaConfigBtn.Location = new System.Drawing.Point(25, 64);
             this.GenaConfigBtn.Name = "GenaConfigBtn";
-            this.GenaConfigBtn.Size = new System.Drawing.Size(75, 23);
+            this.GenaConfigBtn.Size = new System.Drawing.Size(75, 25);
             this.GenaConfigBtn.TabIndex = 0;
             this.GenaConfigBtn.Text = "常 规";
             this.GenaConfigBtn.UseVisualStyleBackColor = false;
@@ -84,5 +135,8 @@
 
         private System.Windows.Forms.SplitContainer ConfigSplitContainer;
         private System.Windows.Forms.Button GenaConfigBtn;
+        private System.Windows.Forms.Button AboutConfigBtn;
+        private System.Windows.Forms.Button DevConfigBtn;
+        private System.Windows.Forms.Button UserConfigBtn;
     }
 }
