@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkViolet;
+            this.BackColor = System.Drawing.Color.Purple;
             this.Controls.Add(this.AboutControlLbl);
             this.Name = "AboutControl";
             this.Size = new System.Drawing.Size(700, 420);

@@ -65,17 +65,23 @@
     <Compile Include="ConfigPanle\DevControl.Designer.cs">
       <DependentUpon>DevControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfigPanle\DevInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfigPanle\DevInfo.Designer.cs">
+      <DependentUpon>DevInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfigPanle\GeneralControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ConfigPanle\GeneralControl.Designer.cs">
       <DependentUpon>GeneralControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfigPanle\DevInfo.cs">
+    <Compile Include="ConfigPanle\UserInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ConfigPanle\DevInfo.Designer.cs">
-      <DependentUpon>DevInfo.cs</DependentUpon>
+    <Compile Include="ConfigPanle\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfigPanle\UsersControl.cs">
       <SubType>UserControl</SubType>
@@ -106,11 +112,14 @@
     <EmbeddedResource Include="ConfigPanle\DevControl.resx">
       <DependentUpon>DevControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPanle\DevInfo.resx">
+      <DependentUpon>DevInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfigPanle\GeneralControl.resx">
       <DependentUpon>GeneralControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfigPanle\DevInfo.resx">
-      <DependentUpon>DevInfo.cs</DependentUpon>
+    <EmbeddedResource Include="ConfigPanle\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigPanle\UsersControl.resx">
       <DependentUpon>UsersControl.cs</DependentUpon>
@@ -145,7 +154,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ico\Home.png" />
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

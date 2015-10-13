@@ -40,6 +40,7 @@
             // 
             // ConfigSplitContainer
             // 
+            this.ConfigSplitContainer.BackColor = System.Drawing.Color.Purple;
             this.ConfigSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ConfigSplitContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.ConfigSplitContainer.IsSplitterFixed = true;
@@ -48,11 +49,16 @@
             // 
             // ConfigSplitContainer.Panel1
             // 
+            this.ConfigSplitContainer.Panel1.BackColor = System.Drawing.Color.Purple;
             this.ConfigSplitContainer.Panel1.Controls.Add(this.AboutConfigBtn);
             this.ConfigSplitContainer.Panel1.Controls.Add(this.DevConfigBtn);
             this.ConfigSplitContainer.Panel1.Controls.Add(this.UserConfigBtn);
             this.ConfigSplitContainer.Panel1.Controls.Add(this.GenaConfigBtn);
             this.ConfigSplitContainer.Panel1MinSize = 100;
+            // 
+            // ConfigSplitContainer.Panel2
+            // 
+            this.ConfigSplitContainer.Panel2.BackColor = System.Drawing.Color.Purple;
             this.ConfigSplitContainer.Size = new System.Drawing.Size(840, 420);
             this.ConfigSplitContainer.SplitterDistance = 130;
             this.ConfigSplitContainer.SplitterWidth = 10;

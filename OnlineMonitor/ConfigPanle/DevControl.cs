@@ -16,16 +16,36 @@ namespace OnlineMonitor.ConfigPanle
             InitializeComponent();
         }
         public ConfigPanle.DevInfo View_DevInfo;
-        private void DevAddBtn_Click(object sender, EventArgs e)
+        
+
+        private void AddDevBtn_Click(object sender, EventArgs e)
         {
-            this.Controls.Remove(DevlistView);
-            View_DevInfo = new ConfigPanle.DevInfo();
-            this.Controls.Add(View_DevInfo);
-            this.View_DevInfo.Location = new System.Drawing.Point(0, 30);
-
-            this.DevlistView.BeginUpdate();
-
-            this.DevlistView.EndUpdate();
+            ReturnBtn.BringToFront();
+            ApplyBtn.BringToFront();
+            DIListView.SendToBack();
+  
         }
+
+        private void RemoveDevBtn_Click(object sender, EventArgs e)
+        {
+            ReturnBtn.BringToFront();
+            ApplyBtn.BringToFront();
+        }
+
+        private void ReturnBtn_Click(object sender, EventArgs e)
+        {
+            DevPanel.SendToBack();
+            //DIListView.BringToFront();
+            AddDevBtn.BringToFront();
+            RemoveDevBtn.BringToFront();
+        }
+
+        private void ApplyBtn_Click(object sender, EventArgs e)
+        {
+            AddDevBtn.BringToFront();
+            RemoveDevBtn.BringToFront();
+        }
+
+
     }
 }

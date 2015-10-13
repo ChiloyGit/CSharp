@@ -60,6 +60,7 @@ namespace OnlineMonitor
 
         private void SetBtn_Click(object sender, EventArgs e)
         {
+            HomeBtn.BringToFront();
             View_AppConfig.Show();
             MainPanle.Controls.Clear();
             MainPanle.Controls.Add(View_AppConfig);
@@ -68,6 +69,7 @@ namespace OnlineMonitor
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
+            SetBtn.BringToFront();
             View_MonitorState.Show();
             MainPanle.Controls.Clear();
             MainPanle.Controls.Add(View_MonitorState);

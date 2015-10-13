@@ -73,7 +73,7 @@
             this.HomeBtn.FlatAppearance.BorderSize = 0;
             this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HomeBtn.Image = global::OnlineMonitor.Properties.Resources.Home;
-            this.HomeBtn.Location = new System.Drawing.Point(810, 0);
+            this.HomeBtn.Location = new System.Drawing.Point(840, 0);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(30, 30);
             this.HomeBtn.TabIndex = 1;
@@ -99,10 +99,10 @@
             this.ClientSize = new System.Drawing.Size(900, 480);
             this.ControlBox = false;
             this.Controls.Add(this.MainPanle);
-            this.Controls.Add(this.SetBtn);
             this.Controls.Add(this.ExitBtn);
-            this.Controls.Add(this.HomeBtn);
             this.Controls.Add(this.MainLabel);
+            this.Controls.Add(this.SetBtn);
+            this.Controls.Add(this.HomeBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
