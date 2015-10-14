@@ -50,6 +50,7 @@
             // 
             this.DIListView.BackColor = System.Drawing.Color.Purple;
             this.DIListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DIListView.ForeColor = System.Drawing.Color.White;
             this.DIListView.Location = new System.Drawing.Point(0, 30);
             this.DIListView.Name = "DIListView";
             this.DIListView.Size = new System.Drawing.Size(700, 390);
@@ -212,8 +213,8 @@
             this.Controls.Add(this.ApplyBtn);
             this.Controls.Add(this.AddDevBtn);
             this.Controls.Add(this.ReturnBtn);
-            this.Controls.Add(this.DevPanel);
             this.Controls.Add(this.DIListView);
+            this.Controls.Add(this.DevPanel);
             this.Name = "DevControl";
             this.Size = new System.Drawing.Size(700, 420);
             this.DevPanel.ResumeLayout(false);

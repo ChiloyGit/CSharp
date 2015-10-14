@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.RemoveDevBtn = new System.Windows.Forms.Button();
             this.ApplyBtn = new System.Windows.Forms.Button();
             this.AddDevBtn = new System.Windows.Forms.Button();
@@ -43,6 +44,7 @@
             this.UserMobilelbl = new System.Windows.Forms.Label();
             this.UserNameTBox = new System.Windows.Forms.TextBox();
             this.UserNamelbl = new System.Windows.Forms.Label();
+            this.UserImageList = new System.Windows.Forms.ImageList(this.components);
             this.UserPanle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +100,7 @@
             // 
             this.UIListView.BackColor = System.Drawing.Color.Purple;
             this.UIListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UIListView.ForeColor = System.Drawing.Color.White;
             this.UIListView.Location = new System.Drawing.Point(0, 30);
             this.UIListView.Name = "UIListView";
             this.UIListView.Size = new System.Drawing.Size(700, 390);
@@ -203,6 +206,12 @@
             this.UserNamelbl.Text = "姓  名：";
             this.UserNamelbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // UserImageList
+            // 
+            this.UserImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.UserImageList.ImageSize = new System.Drawing.Size(16, 16);
+            this.UserImageList.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // UsersControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -216,6 +225,7 @@
             this.Controls.Add(this.UserPanle);
             this.Name = "UsersControl";
             this.Size = new System.Drawing.Size(700, 420);
+            this.Load += new System.EventHandler(this.UsersControl_Load);
             this.UserPanle.ResumeLayout(false);
             this.UserPanle.PerformLayout();
             this.ResumeLayout(false);
@@ -239,5 +249,6 @@
         private System.Windows.Forms.Label UserMobilelbl;
         private System.Windows.Forms.TextBox UserNameTBox;
         private System.Windows.Forms.Label UserNamelbl;
+        private System.Windows.Forms.ImageList UserImageList;
     }
 }

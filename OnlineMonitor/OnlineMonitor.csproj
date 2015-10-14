@@ -83,6 +83,7 @@
     <Compile Include="ConfigPanle\UserInfo.Designer.cs">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfigPanle\OperatINI.cs" />
     <Compile Include="ConfigPanle\UsersControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +175,7 @@
   <ItemGroup>
     <None Include="Resources\Home.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
