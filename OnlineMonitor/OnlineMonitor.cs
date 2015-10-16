@@ -26,7 +26,7 @@ namespace OnlineMonitor
 
         Point mouseOff;//鼠标移动位置变量
         bool leftFlag;//标签是否为左键
-        private void MonitorFrm_MouseDown(object sender, MouseEventArgs e)
+        public void MonitorFrm_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -35,7 +35,7 @@ namespace OnlineMonitor
             }
         }
 
-        private void MonitorFrm_MouseMove(object sender, MouseEventArgs e)
+        public void MonitorFrm_MouseMove(object sender, MouseEventArgs e)
         {
             if (leftFlag)
             {
@@ -45,7 +45,7 @@ namespace OnlineMonitor
             }
         }
 
-        private void MonitorFrm_MouseUp(object sender, MouseEventArgs e)
+        public void MonitorFrm_MouseUp(object sender, MouseEventArgs e)
         {
             if (leftFlag)
             {

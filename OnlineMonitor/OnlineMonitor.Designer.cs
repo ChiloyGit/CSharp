@@ -43,6 +43,9 @@
             this.MainPanle.Name = "MainPanle";
             this.MainPanle.Size = new System.Drawing.Size(840, 420);
             this.MainPanle.TabIndex = 4;
+            this.MainPanle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseDown);
+            this.MainPanle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseMove);
+            this.MainPanle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseUp);
             // 
             // SetBtn
             // 

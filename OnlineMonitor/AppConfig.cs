@@ -19,7 +19,6 @@ namespace OnlineMonitor
         public ConfigPanle.AboutControl View_AboutControl;
         public ConfigPanle.DevControl View_DevControl;
         public ConfigPanle.UsersControl View_UsersControl;
-
         private void GenaConfigBtn_Click(object sender, EventArgs e)
         {
             View_GeneralControl = new ConfigPanle.GeneralControl();
