@@ -48,7 +48,7 @@
             // 
             // DIListView
             // 
-            this.DIListView.BackColor = System.Drawing.Color.Purple;
+            this.DIListView.BackColor = System.Drawing.SystemColors.Control;
             this.DIListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DIListView.ForeColor = System.Drawing.Color.White;
             this.DIListView.Location = new System.Drawing.Point(0, 30);

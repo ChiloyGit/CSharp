@@ -34,7 +34,7 @@
             // AboutControlLbl
             // 
             this.AboutControlLbl.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.AboutControlLbl.ForeColor = System.Drawing.Color.Transparent;
+            this.AboutControlLbl.ForeColor = System.Drawing.SystemColors.WindowText;
             this.AboutControlLbl.Location = new System.Drawing.Point(25, 64);
             this.AboutControlLbl.Name = "AboutControlLbl";
             this.AboutControlLbl.Size = new System.Drawing.Size(658, 20);
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Purple;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.AboutControlLbl);
             this.Name = "AboutControl";
             this.Size = new System.Drawing.Size(700, 420);

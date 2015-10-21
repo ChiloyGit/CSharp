@@ -38,7 +38,7 @@
             // 
             // MainPanle
             // 
-            this.MainPanle.BackColor = System.Drawing.Color.Violet;
+            this.MainPanle.BackColor = System.Drawing.SystemColors.Control;
             this.MainPanle.Location = new System.Drawing.Point(30, 30);
             this.MainPanle.Name = "MainPanle";
             this.MainPanle.Size = new System.Drawing.Size(840, 420);
@@ -88,7 +88,7 @@
             this.MainLabel.Image = global::OnlineMonitor.Properties.Resources.MonitorText;
             this.MainLabel.Location = new System.Drawing.Point(0, 0);
             this.MainLabel.Name = "MainLabel";
-            this.MainLabel.Size = new System.Drawing.Size(810, 30);
+            this.MainLabel.Size = new System.Drawing.Size(812, 30);
             this.MainLabel.TabIndex = 0;
             this.MainLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseDown);
             this.MainLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MonitorFrm_MouseMove);
@@ -98,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Purple;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(900, 480);
             this.ControlBox = false;
             this.Controls.Add(this.MainPanle);

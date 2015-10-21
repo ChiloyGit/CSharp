@@ -98,7 +98,7 @@
             // 
             // UIListView
             // 
-            this.UIListView.BackColor = System.Drawing.Color.Purple;
+            this.UIListView.BackColor = System.Drawing.SystemColors.Control;
             this.UIListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UIListView.ForeColor = System.Drawing.Color.White;
             this.UIListView.Location = new System.Drawing.Point(0, 30);
@@ -109,6 +109,7 @@
             // 
             // UserPanle
             // 
+            this.UserPanle.BackColor = System.Drawing.SystemColors.Control;
             this.UserPanle.Controls.Add(this.DITypeTBox);
             this.UserPanle.Controls.Add(this.UserMailTBox);
             this.UserPanle.Controls.Add(this.UserTypelbl);
